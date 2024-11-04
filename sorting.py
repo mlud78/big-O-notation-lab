@@ -7,11 +7,10 @@ def randomize(size):
 def search(size):
     ran = np.random.randint(0, 200000)
     arr = randomize(size)
-    found = False
     for num in arr:
         if num == ran:
-            found = True
-    return found
+            return True
+    return False
 
 def bubble_sort(arr):
     for n in range(len(arr) - 1, 0, -1):
